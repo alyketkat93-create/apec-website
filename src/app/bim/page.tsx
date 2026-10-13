@@ -10,6 +10,8 @@ import {
   XCircle,
   ArrowRight,
   ArrowLeft,
+  Layers,
+  Box,
 } from "lucide-react";
 
 export default function BimTechnologyPage() {
@@ -17,19 +19,24 @@ export default function BimTechnologyPage() {
   const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
 
   return (
-    <div className="flex flex-col w-full bg-slate-50 min-h-screen text-slate-900">
+    <div className="flex flex-col w-full bg-arch-950 min-h-screen text-arch-200 relative overflow-hidden">
+      {/* Background blueprint grid & ambient auras */}
+      <div className="absolute inset-0 bg-blueprint pointer-events-none opacity-40" />
+      <div className="absolute top-0 right-1/4 w-[600px] h-[400px] bg-brand-500/10 blur-[150px] pointer-events-none rounded-full" />
+      <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-cyan-500/5 blur-[160px] pointer-events-none rounded-full" />
+
       {/* Header Banner */}
-      <section className="relative py-20 lg:py-28 bg-gradient-to-b from-white via-emerald-50/50 to-slate-50 border-b border-slate-200 overflow-hidden">
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative z-10 py-20 lg:py-28 border-b border-arch-750/60 bg-arch-900/40 backdrop-blur-md">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl space-y-4">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 border border-emerald-300 text-emerald-800 text-xs font-bold shadow-xs">
-              <Cpu className="w-3.5 h-3.5 text-emerald-600" />
-              <span>{lang === "ar" ? "الهندسة الرقمية وتقنيات المستقبل" : "Virtual Design & Construction (VDC)"}</span>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-arch-850/90 border border-brand-500/30 text-brand-400 text-xs font-mono tracking-widest uppercase shadow-sm">
+              <Cpu className="w-3.5 h-3.5 text-brand-400" />
+              <span>{lang === "ar" ? "الهندسة الرقمية وتقنيات النمذجة" : "Virtual Design & Construction (VDC)"}</span>
             </div>
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
               {t.bim.pageTitle}
             </h1>
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
+            <p className="text-base sm:text-lg text-arch-300 leading-relaxed font-normal">
               {t.bim.pageSubtitle}
             </p>
           </div>
@@ -37,38 +44,38 @@ export default function BimTechnologyPage() {
       </section>
 
       {/* Philosophy & Executive Overview */}
-      <section className="py-20 bg-white border-b border-slate-200">
+      <section className="relative z-10 py-20 border-b border-arch-750/60 bg-arch-900/20 backdrop-blur-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 space-y-6">
-              <span className="text-xs font-bold uppercase tracking-widest text-emerald-700">
+              <span className="text-xs font-mono font-bold uppercase tracking-widest text-brand-400">
                 {lang === "ar" ? "رؤيتنا مع التكنولوجيا العالمية" : "Next-Gen Engineering Paradigm"}
               </span>
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
                 {t.bim.introTitle}
               </h2>
-              <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-arch-300 leading-relaxed font-normal">
                 {lang === "ar"
                   ? "نحن نقدم رؤية جديدة في الهندسة الكهربائية والميكانيكية من خلال تقنية BIM التي توفر التكلفة والوقت. هي عملية ذكية تعتمد على النماذج ثلاثية الأبعاد والتي تمنح المتخصصين في الهندسة المعمارية والهندسة والبناء (AEC) الرؤية والأدوات اللازمة لتخطيط المباني والبنية التحتية وتصميمها وإنشائها وإدارتها بشكل أكثر كفاءة."
                   : "We deliver a forward-looking paradigm in MEP engineering through advanced BIM workflows that dramatically conserve capital and time. Building Information Modeling is an intelligent 3D model-based process that equips architecture, engineering, and construction (AEC) professionals with the insight and tools to efficiently plan, design, construct, and manage buildings and infrastructure."}
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
-                <div className="p-4 rounded-2xl bg-emerald-50/80 border border-emerald-200 flex flex-col gap-1 shadow-xs">
-                  <span className="text-2xl font-black text-emerald-700 font-sans">LOD 500</span>
-                  <span className="text-xs text-slate-700 font-bold">
+                <div className="p-5 rounded-2xl bg-arch-900/90 border border-brand-500/30 flex flex-col gap-1 shadow-lg">
+                  <span className="text-3xl font-black text-brand-400 font-mono">LOD 500</span>
+                  <span className="text-xs text-arch-300 font-medium">
                     {lang === "ar" ? "أعلى مستويات التفصيل الرقمي" : "Level of Development"}
                   </span>
                 </div>
-                <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col gap-1 shadow-xs">
-                  <span className="text-2xl font-black text-slate-900 font-sans">Zero</span>
-                  <span className="text-xs text-slate-700 font-bold">
+                <div className="p-5 rounded-2xl bg-arch-900/90 border border-arch-750/70 flex flex-col gap-1 shadow-lg">
+                  <span className="text-3xl font-black text-white font-mono">ZERO</span>
+                  <span className="text-xs text-arch-300 font-medium">
                     {lang === "ar" ? "تعارضات ميدانية متبقية" : "Site Clash Incidents"}
                   </span>
                 </div>
-                <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col gap-1 shadow-xs">
-                  <span className="text-2xl font-black text-emerald-700 font-sans">100%</span>
-                  <span className="text-xs text-slate-700 font-bold">
+                <div className="p-5 rounded-2xl bg-arch-900/90 border border-arch-750/70 flex flex-col gap-1 shadow-lg">
+                  <span className="text-3xl font-black text-brand-400 font-mono">100%</span>
+                  <span className="text-xs text-arch-300 font-medium">
                     {lang === "ar" ? "مخططات تنفيذية موحدة" : "CSD Synchronized"}
                   </span>
                 </div>
@@ -76,15 +83,15 @@ export default function BimTechnologyPage() {
             </div>
 
             <div className="lg:col-span-5 relative">
-              <div className="relative rounded-2xl overflow-hidden bg-slate-50 border border-slate-200 shadow-xl p-6">
+              <div className="relative rounded-3xl overflow-hidden bg-arch-900/90 border border-arch-750/80 shadow-2xl p-6 backdrop-blur-md">
                 <Image
                   src="/images/bim/bim-architecture.jpg"
                   alt="BIM Concept Architecture"
                   width={600}
                   height={450}
-                  className="rounded-xl object-cover filter contrast-105 mb-4 shadow-xs"
+                  className="rounded-2xl object-cover filter contrast-110 mb-4 shadow-md"
                 />
-                <span className="text-xs text-slate-600 block text-center font-medium">
+                <span className="text-xs text-arch-400 block text-center font-mono">
                   {lang === "ar" ? "تنسيق متكامل بين كافة الأنظمة في نموذج رقمي موحد" : "Single synchronized federated 3D model uniting all trades"}
                 </span>
               </div>
@@ -94,50 +101,50 @@ export default function BimTechnologyPage() {
       </section>
 
       {/* BIM vs Traditional Side-by-Side Comparison Matrix */}
-      <section className="py-20 bg-slate-50 border-b border-slate-200">
+      <section className="relative z-10 py-20 border-b border-arch-750/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
-            <span className="text-xs font-bold uppercase tracking-widest text-emerald-700">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-brand-400">
               {lang === "ar" ? "تحول الصناعة من الرسومات إلى النماذج" : "The Industry Paradigm Shift"}
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
               {t.bim.comparisonTitle}
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Traditional Method */}
-            <div className="rounded-2xl bg-white border border-red-200 p-8 shadow-sm flex flex-col justify-between">
+            <div className="rounded-3xl bg-arch-900/80 border border-red-500/30 p-8 sm:p-10 shadow-xl flex flex-col justify-between backdrop-blur-md">
               <div>
-                <div className="flex items-center gap-3 mb-6 pb-4 border-b border-red-100">
-                  <div className="w-10 h-10 rounded-xl bg-red-100 text-red-600 flex items-center justify-center">
+                <div className="flex items-center gap-3.5 mb-6 pb-4 border-b border-arch-750/60">
+                  <div className="w-11 h-11 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 flex items-center justify-center shrink-0">
                     <XCircle className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-slate-900">
+                    <h3 className="text-lg font-bold text-white">
                       {t.bim.tradTitle}
                     </h3>
-                    <span className="text-xs text-red-600 font-bold">
+                    <span className="text-xs text-red-400 font-mono font-semibold">
                       {lang === "ar" ? "مؤشرات متأخرة وخسائر ميدانية" : "Lagging Indicators & Site Waste"}
                     </span>
                   </div>
                 </div>
 
-                <div className="space-y-4 text-xs sm:text-sm text-slate-700">
-                  <div className="flex items-start gap-2.5">
-                    <XCircle className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
+                <div className="space-y-4 text-xs sm:text-sm text-arch-300">
+                  <div className="flex items-start gap-3">
+                    <XCircle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
                     <span>{t.bim.trad1}</span>
                   </div>
-                  <div className="flex items-start gap-2.5">
-                    <XCircle className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3">
+                    <XCircle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
                     <span>{t.bim.trad2}</span>
                   </div>
-                  <div className="flex items-start gap-2.5">
-                    <XCircle className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3">
+                    <XCircle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
                     <span>{t.bim.trad3}</span>
                   </div>
-                  <div className="flex items-start gap-2.5">
-                    <XCircle className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3">
+                    <XCircle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
                     <span>{t.bim.trad4}</span>
                   </div>
                 </div>
@@ -145,38 +152,38 @@ export default function BimTechnologyPage() {
             </div>
 
             {/* APEC BIM Method */}
-            <div className="rounded-2xl bg-white border border-emerald-300 p-8 shadow-md flex flex-col justify-between relative overflow-hidden">
-              <div className="absolute top-0 inset-x-0 h-1.5 bg-emerald-500" />
+            <div className="rounded-3xl bg-arch-900/90 border border-brand-500/50 p-8 sm:p-10 shadow-2xl flex flex-col justify-between relative overflow-hidden backdrop-blur-md">
+              <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-brand-500 via-cyan-400 to-brand-500" />
               <div>
-                <div className="flex items-center gap-3 mb-6 pb-4 border-b border-emerald-100">
-                  <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
+                <div className="flex items-center gap-3.5 mb-6 pb-4 border-b border-arch-750/60">
+                  <div className="w-11 h-11 rounded-xl bg-brand-500/10 border border-brand-500/40 text-brand-400 flex items-center justify-center shrink-0">
                     <CheckCircle2 className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-slate-900">
+                    <h3 className="text-lg font-bold text-white">
                       {t.bim.bimMethodTitle}
                     </h3>
-                    <span className="text-xs text-emerald-700 font-bold">
+                    <span className="text-xs text-brand-400 font-mono font-semibold">
                       {lang === "ar" ? "مؤشرات رائدة ودقة منسقة في الوقت المناسب" : "Leading Indicators & Synchronized Precision"}
                     </span>
                   </div>
                 </div>
 
-                <div className="space-y-4 text-xs sm:text-sm text-slate-800">
-                  <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                <div className="space-y-4 text-xs sm:text-sm text-arch-200">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
                     <span className="font-medium">{t.bim.bim1}</span>
                   </div>
-                  <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
                     <span className="font-medium">{t.bim.bim2}</span>
                   </div>
-                  <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
                     <span className="font-medium">{t.bim.bim3}</span>
                   </div>
-                  <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
                     <span className="font-medium">{t.bim.bim4}</span>
                   </div>
                 </div>
@@ -187,63 +194,68 @@ export default function BimTechnologyPage() {
       </section>
 
       {/* BIM Across the Facility Lifecycle */}
-      <section className="py-20 bg-white border-b border-slate-200">
+      <section className="relative z-10 py-20 border-b border-arch-750/60 bg-arch-900/20 backdrop-blur-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
-            <span className="text-xs font-bold uppercase tracking-widest text-emerald-700">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-brand-400">
               {lang === "ar" ? "دورة حياة المشروع الرقمية" : "End-to-End Lifecycle"}
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
               {t.bim.lifecycleTitle}
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col gap-3 shadow-xs">
-              <span className="text-xs font-mono font-bold text-emerald-700">STEP 01</span>
-              <h3 className="text-base font-bold text-slate-900">{t.bim.stagePlanning}</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">{t.bim.stagePlanningDesc}</p>
+            <div className="p-6 rounded-2xl bg-arch-900/90 border border-arch-750/70 hover:border-brand-500/40 flex flex-col gap-3 shadow-lg backdrop-blur-xs transition-colors">
+              <span className="text-xs font-mono font-bold text-brand-400 tracking-wider">STEP 01</span>
+              <h3 className="text-base font-bold text-white">{t.bim.stagePlanning}</h3>
+              <p className="text-xs text-arch-300 leading-relaxed font-normal">{t.bim.stagePlanningDesc}</p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col gap-3 shadow-xs">
-              <span className="text-xs font-mono font-bold text-emerald-700">STEP 02</span>
-              <h3 className="text-base font-bold text-slate-900">{t.bim.stageDesign}</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">{t.bim.stageDesignDesc}</p>
+            <div className="p-6 rounded-2xl bg-arch-900/90 border border-arch-750/70 hover:border-brand-500/40 flex flex-col gap-3 shadow-lg backdrop-blur-xs transition-colors">
+              <span className="text-xs font-mono font-bold text-brand-400 tracking-wider">STEP 02</span>
+              <h3 className="text-base font-bold text-white">{t.bim.stageDesign}</h3>
+              <p className="text-xs text-arch-300 leading-relaxed font-normal">{t.bim.stageDesignDesc}</p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col gap-3 shadow-xs">
-              <span className="text-xs font-mono font-bold text-emerald-700">STEP 03</span>
-              <h3 className="text-base font-bold text-slate-900">{t.bim.stageBuild}</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">{t.bim.stageBuildDesc}</p>
+            <div className="p-6 rounded-2xl bg-arch-900/90 border border-arch-750/70 hover:border-brand-500/40 flex flex-col gap-3 shadow-lg backdrop-blur-xs transition-colors">
+              <span className="text-xs font-mono font-bold text-brand-400 tracking-wider">STEP 03</span>
+              <h3 className="text-base font-bold text-white">{t.bim.stageBuild}</h3>
+              <p className="text-xs text-arch-300 leading-relaxed font-normal">{t.bim.stageBuildDesc}</p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col gap-3 shadow-xs">
-              <span className="text-xs font-mono font-bold text-emerald-700">STEP 04</span>
-              <h3 className="text-base font-bold text-slate-900">{t.bim.stageOperate}</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">{t.bim.stageOperateDesc}</p>
+            <div className="p-6 rounded-2xl bg-arch-900/90 border border-arch-750/70 hover:border-brand-500/40 flex flex-col gap-3 shadow-lg backdrop-blur-xs transition-colors">
+              <span className="text-xs font-mono font-bold text-brand-400 tracking-wider">STEP 04</span>
+              <h3 className="text-base font-bold text-white">{t.bim.stageOperate}</h3>
+              <p className="text-xs text-arch-300 leading-relaxed font-normal">{t.bim.stageOperateDesc}</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Direct CTA */}
-      <section className="py-20 bg-gradient-to-r from-emerald-700 via-emerald-600 to-teal-600 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <h2 className="text-3xl font-black text-white">
+      <section className="relative z-10 py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="rounded-3xl bg-gradient-to-r from-arch-900/90 via-arch-850/90 to-arch-900/90 border border-brand-500/40 p-10 sm:p-14 text-center space-y-6 shadow-2xl relative overflow-hidden backdrop-blur-xl">
+          <div className="absolute -top-24 -right-24 w-80 h-80 bg-brand-500/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
+
+          <h2 className="text-2xl sm:text-4xl font-black text-white relative z-10">
             {lang === "ar" ? "هل ترغب في تطبيق تقنية الـ BIM في مشروعك القادم؟" : "Elevate Your Next Project with APEC's BIM Technical Office"}
           </h2>
-          <p className="text-sm text-emerald-100 max-w-2xl mx-auto">
+          <p className="text-sm text-arch-300 max-w-2xl mx-auto relative z-10 leading-relaxed font-normal">
             {lang === "ar"
               ? "تواصل مع مهندسينا لحساب العائد الاستثماري وحل التعارضات واستخراج المخططات التنفيذية الدقيقة."
               : "Connect with our VDC coordination department for early clash resolution matrices, LOD 400 fabrication sheets, and cost-saving simulations."}
           </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-sm bg-white text-emerald-800 hover:bg-emerald-50 shadow-xl transition-all cursor-pointer"
-          >
-            <span>{t.nav.requestConsultation}</span>
-            <ArrowIcon className="w-4 h-4 text-emerald-800" />
-          </Link>
+          <div className="pt-2 relative z-10">
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-sm bg-brand-500 hover:bg-brand-400 text-arch-950 shadow-lg shadow-brand-500/25 transition-all hover:scale-[1.02] cursor-pointer"
+            >
+              <span>{t.nav.requestConsultation}</span>
+              <ArrowIcon className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
     </div>

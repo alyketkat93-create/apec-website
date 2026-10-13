@@ -64,7 +64,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" dir="ltr">
-      <body className="bg-slate-50 text-slate-900 antialiased selection:bg-brand-500 selection:text-white flex flex-col min-h-screen">
+      <body className="bg-arch-950 text-arch-200 antialiased selection:bg-brand-500 selection:text-white flex flex-col min-h-screen bg-blueprint">
         <LanguageProvider>
           <Header />
           <main className="flex-1 flex flex-col">{children}</main>

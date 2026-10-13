@@ -11,13 +11,13 @@ export const LanguageSwitcher: React.FC<{ className?: string }> = ({ className =
     <button
       onClick={() => setLang(lang === "en" ? "ar" : "en")}
       aria-label="Toggle language"
-      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all border shadow-sm ${
+      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all border backdrop-blur-md shadow-sm ${
         lang === "ar"
-          ? "border-emerald-300 bg-emerald-50 text-emerald-800 hover:bg-emerald-100"
-          : "border-slate-200 bg-white text-slate-700 hover:bg-slate-50 hover:text-emerald-700"
+          ? "border-brand-500/50 bg-brand-500/15 text-brand-300 hover:bg-brand-500/25"
+          : "border-arch-700 bg-arch-850/80 text-arch-200 hover:bg-arch-800 hover:text-white hover:border-arch-600"
       } ${className}`}
     >
-      <Globe className="w-3.5 h-3.5 text-emerald-600" />
+      <Globe className="w-3.5 h-3.5 text-brand-400" />
       <span>{lang === "en" ? "العربية" : "English"}</span>
     </button>
   );
