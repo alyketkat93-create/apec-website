@@ -7,6 +7,10 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-Proprietary-emerald)](LICENSE)
 
+> 🌐 **Live Public Website (Online Now):** [https://49432a3f4ca242.lhr.life](https://49432a3f4ca242.lhr.life)  
+> 📦 **GitHub Repository:** [https://github.com/alyketkat93-create/apec-website](https://github.com/alyketkat93-create/apec-website)  
+> ⚡ **Deploy to Vercel (1-Click):** [https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falyketkat93-create%2Fapec-website](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falyketkat93-create%2Fapec-website)
+
 ---
 
 ## 🏛️ Overview | نبذة عن المشروع
