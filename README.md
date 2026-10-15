@@ -1,5 +1,5 @@
-# APEC For Contracting — Corporate Website
-### شركة أيبك للمقاولات | الموقع الرسمي
+# Elite For Contracting — Corporate Website
+### شركة إيليت للمقاولات | الموقع الرسمي
 
 [![Next.js 14](https://img.shields.io/badge/Next.js-14.2-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![React 18](https://img.shields.io/badge/React-18.3-blue?style=flat&logo=react)](https://react.dev/)
@@ -16,7 +16,7 @@
 
 ## 🏛️ Overview | نبذة عن المشروع
 
-Production-grade corporate web application for **APEC For Contracting (شركة أيبك للمقاولات)**, an accredited Class 1 General & MEP Contractor based in Riyadh, Saudi Arabia. Backed by over 35 years of engineering heritage and certified BIM execution.
+Production-grade corporate web application for **Elite For Contracting (شركة إيليت للمقاولات)**, an accredited Class 1 General & MEP Contractor based in Riyadh, Saudi Arabia. Backed by over 35 years of engineering heritage and certified BIM execution.
 
 The platform is designed with a **Luxury Architectural Midnight Navy Theme** (deep petroleum slates `#0A1120`, `#0F1A2E`, technical blueprint grid overlays, and vivid emerald green brand accents), complete with full **bilingual (Arabic RTL & English LTR)** support across all 17 pages.
 
@@ -82,4 +82,4 @@ npm run start -- -p 3005
 - **Headquarters**: Al-Nakheel Tower, 11th Floor, King Fahd Road, Riyadh, KSA
 - **Commercial Registration (CR)**: 1010943353
 - **Classification**: Class 1 (الدرجة الأولى) — MOMRAH
-- **Direct Contacts**: `+966 11 488 6660` | WhatsApp: `+966 54 813 2029` | `b.d@apec.com.sa`
+- **Direct Contacts**: `+966 11 488 6660` | WhatsApp: `+966 54 813 2029` | `b.d@elite.com.sa`

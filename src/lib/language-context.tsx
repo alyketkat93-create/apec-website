@@ -23,7 +23,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   useEffect(() => {
     // Check saved preference or URL or browser language
-    const saved = localStorage.getItem("apec_lang") as Language;
+    const saved = localStorage.getItem("elite_lang") as Language;
     if (saved === "en" || saved === "ar") {
       setLangState(saved);
     }
@@ -31,7 +31,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   const setLang = (newLang: Language) => {
     setLangState(newLang);
-    localStorage.setItem("apec_lang", newLang);
+    localStorage.setItem("elite_lang", newLang);
   };
 
   useEffect(() => {

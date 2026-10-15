@@ -3,7 +3,7 @@ import { projectsData } from "@/data/projects";
 import { servicesData } from "@/data/services";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.apec.com.sa";
+  const baseUrl = "https://www.elite.com.sa";
 
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: `${baseUrl}`, lastModified: new Date(), changeFrequency: "weekly", priority: 1.0 },

@@ -6,14 +6,14 @@ import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | APEC For Contracting",
-    default: "APEC | Premium International Construction & MEP Engineering",
+    template: "%s | Elite For Contracting",
+    default: "Elite | Premium International Construction & MEP Engineering",
   },
   description:
-    "APEC is an accredited Class 1 General & MEP Contractor in Saudi Arabia. Specializing in advanced chilled water HVAC, firefighting, electrical infrastructure, and BIM engineering across the Middle East.",
+    "Elite is an accredited Class 1 General & MEP Contractor in Saudi Arabia. Specializing in advanced chilled water HVAC, firefighting, electrical infrastructure, and BIM engineering across the Middle East.",
   keywords: [
-    "APEC Contracting",
-    "شركة أيبك للمقاولات",
+    "Elite Contracting",
+    "شركة إيليت للمقاولات",
     "MEP Contractor Saudi Arabia",
     "Chilled Water Systems Riyadh",
     "HVAC Contracting KSA",
@@ -23,10 +23,10 @@ export const metadata: Metadata = {
     "مقاول كهروميكانيك فئة أولى",
     "تكييف مياه مبردة",
   ],
-  authors: [{ name: "APEC Engineering & Management" }],
-  creator: "APEC For Contracting",
-  publisher: "APEC For Contracting",
-  metadataBase: new URL("https://www.apec.com.sa"),
+  authors: [{ name: "Elite Engineering & Management" }],
+  creator: "Elite For Contracting",
+  publisher: "Elite For Contracting",
+  metadataBase: new URL("https://www.elite.com.sa"),
   alternates: {
     canonical: "/",
     languages: {
@@ -35,17 +35,17 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "APEC | Premium International Construction & MEP Engineering",
+    title: "Elite | Premium International Construction & MEP Engineering",
     description:
       "Class 1 accredited electromechanical and general contractor backed by over 35 years of engineering heritage and certified BIM execution.",
-    url: "https://www.apec.com.sa",
-    siteName: "APEC For Contracting",
+    url: "https://www.elite.com.sa",
+    siteName: "Elite For Contracting",
     images: [
       {
         url: "/images/logo.png",
         width: 800,
         height: 600,
-        alt: "APEC Official Logo",
+        alt: "Elite Official Logo",
       },
     ],
     locale: "en_US",

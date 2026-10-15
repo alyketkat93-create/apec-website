@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/admin", "/api/"],
     },
-    sitemap: "https://www.apec.com.sa/sitemap.xml",
+    sitemap: "https://www.elite.com.sa/sitemap.xml",
   };
 }

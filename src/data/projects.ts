@@ -33,7 +33,7 @@ export const projectsData: Project[] = [
     disciplinesAr: ["تكييف المياه المبردة", "شبكات السباكة والصرف", "التنسيق بنظام BIM", "الفحص والتشغيل"],
     summary: "A prestigious national cultural landmark project executed for the Ministry of Culture, incorporating state-of-the-art chilled water cooling infrastructure engineered for acoustic serenity and precise climate control.",
     summaryAr: "مشروع وطني وثقافي بارز نفذ لصالح وزارة الثقافة، تضمن بنية تحتية هندسية متطورة لأنظمة المياه المبردة المصممة للهدوء الصوتي الفائق والتحكم المناخي الدقيق لحفظ المخطوطات والتحف.",
-    description: "APEC played a pivotal engineering role in advancing the climate and mechanical infrastructure for the Prince Mohammed bin Salman Center for Arabic Calligraphy (Dar Al-Qalam) under the Saudi Ministry of Culture. The engineering scope encompassed high-performance chilled water piping, central air handling units, smart thermal distribution, and comprehensive plumbing networks. Execution followed strict acoustic and vibration standards to safeguard historic calligraphy galleries.",
+    description: "Elite played a pivotal engineering role in advancing the climate and mechanical infrastructure for the Prince Mohammed bin Salman Center for Arabic Calligraphy (Dar Al-Qalam) under the Saudi Ministry of Culture. The engineering scope encompassed high-performance chilled water piping, central air handling units, smart thermal distribution, and comprehensive plumbing networks. Execution followed strict acoustic and vibration standards to safeguard historic calligraphy galleries.",
     descriptionAr: "لعبت الشركة دوراً محورياً في تطوير البنية التحتية الميكانيكية لمركز الأمير محمد بن سلمان للخط العربي (دار القلم) التابع لوزارة الثقافة. شمل نطاق العمل شبكات مياه مبردة عالية الكفاءة، محطات مناولة هواء مركزية، توزيع حراري ذكي، وشبكات سباكة متكاملة بمواصفات قياسية تراعي الهدوء والحفاظ على المعروضات.",
     keyTechnicalFeatures: [
       "Heavy-duty Chilled Water central piping network with acoustic dampening.",
@@ -122,7 +122,7 @@ export const projectsData: Project[] = [
     disciplinesAr: ["أعمال كهروميكانيكية شاملة", "أنظمة التيار الخفيف", "شبكات تغذية المياه", "تكييف مخفي"],
     summary: "Fast-track turnkey MEP execution across a compound of 25 luxury residential villas in Al Khobar, completing complex electrical and sanitary distribution within a compressed 3-month timeline.",
     summaryAr: "تنفيذ كهروميكانيكي شامل وسريع لـ 25 فيلا سكنية فاخرة في مدينة الخبر، حيث تم إنجاز أعمال الكهرباء والسباكة والتكييف خلال جدول زمني قياسي مدته 3 أشهر فقط.",
-    description: "The Raka Compound project represents a hallmark of agile project management and multi-disciplinary site coordination. APEC deployed dedicated task forces to concurrently install low-voltage electrical panels, sanitary piping networks, smart drainage, and multi-split HVAC units across all 25 individual villas while upholding the luxury finishing standards required by Abdullah Al-Rajhi Real Estate.",
+    description: "The Raka Compound project represents a hallmark of agile project management and multi-disciplinary site coordination. Elite deployed dedicated task forces to concurrently install low-voltage electrical panels, sanitary piping networks, smart drainage, and multi-split HVAC units across all 25 individual villas while upholding the luxury finishing standards required by Abdullah Al-Rajhi Real Estate.",
     descriptionAr: "يعد كمباوند الراكة نموذجاً في إدارة المشاريع الهندسية المتزامنة، حيث تم تشكيل فرق عمل متوازية لتنفيذ لوحات التوزيع الكهربائية وشبكات السباكة وتغذية المياه والتكييف في 25 فيلا في آن واحد مع الالتزام الصارم بأعلى مستويات التشطيب والجاهزية.",
   },
   {
@@ -188,7 +188,7 @@ export const projectsData: Project[] = [
     disciplinesAr: ["مكافحة الحرائق", "شبكات الرشاشات التلقائية", "أنظمة الغاز النظيف FM200", "إنذار السلامة وحماية الحياة"],
     summary: "Critical life-safety fire protection infrastructure engineered for the outpatient clinics of Andalusia Hospital in Jeddah, adhering strictly to NFPA and Saudi Civil Defense hospital codes.",
     summaryAr: "بنية تحتية بالغة الأهمية لأنظمة السلامة ومكافحة الحريق لمبنى العيادات التابع لمستشفى أندلسية بجدة، مع الالتزام التام بكود الدفاع المدني السعودي ومعايير NFPA العالمية.",
-    description: "Healthcare facilities demand the highest tier of life safety engineering. APEC executed the complete sprinkler grid, fire hose cabinets, certified pump station connections, and clean-agent gaseous fire suppression systems for sensitive medical diagnostics rooms on an expedited schedule.",
+    description: "Healthcare facilities demand the highest tier of life safety engineering. Elite executed the complete sprinkler grid, fire hose cabinets, certified pump station connections, and clean-agent gaseous fire suppression systems for sensitive medical diagnostics rooms on an expedited schedule.",
     descriptionAr: "نظراً للحساسية الفائقة للمنشآت الصحية، قامت الشركة بتنفيذ وتدشين شبكات الإطفاء بالرش الآلي، صناديق الحريق، وتأمين غرف الفحص والأجهزة الطبية الحساسة بأنظمة الإطفاء بالغاز النظيف دون توقف العمل الطبي.",
   },
   {
@@ -217,7 +217,7 @@ export const projectsData: Project[] = [
     disciplinesAr: ["أعمال MEP كاملة", "تكييف معماري متطور", "شبكات القوى والبيانات", "شبكات المياه"],
     summary: "Flagship sales center for the Kingdom's premier master developer NHC, showcasing integrated MEP solutions that deliver pristine aesthetics and thermal comfort.",
     summaryAr: "مركز مبيعات استراتيجي للشركة الوطنية للإسكان بجدة، يجسد قدرات الشركة في تقديم حلول كهروميكانيكية تجمع بين جمالية التصميم المعماري والراحة الحرارية الفائقة.",
-    description: "The NHC Sales Pavilion serves as the high-traffic gateway for major residential off-plan developments. APEC engineered concealed air conditioning grids, premium LED architectural lighting arrays, and discreet utility services to complement modern experiential showrooms.",
+    description: "The NHC Sales Pavilion serves as the high-traffic gateway for major residential off-plan developments. Elite engineered concealed air conditioning grids, premium LED architectural lighting arrays, and discreet utility services to complement modern experiential showrooms.",
     descriptionAr: "مركز استقبال مبيعات المشاريع الكبرى للإسكان بجدة، تم تنفيذ أعمال التكييف المخفي وشبكات القوى وشبكات البيانات الذكية لدعم تجربة عرض رقمية متميزة للمواطنين والمستثمرين.",
   },
 
@@ -251,7 +251,7 @@ export const projectsData: Project[] = [
     disciplinesAr: ["أعمال MEP للقصور", "تبريد مياه مبردة", "عزل صوتي فائق", "أتمتة ذكية"],
     summary: "High-end electromechanical and climate installation executed for the iconic Sabah Al-Ahmad Palace in Kuwait.",
     summaryAr: "مشروع كهروميكانيكي عالي الفخامة لقصر صباح الأحمد بالكويت، متضمناً حلول تبريد هادئة وأعمال ميكانيكية دقيقة متناغمة مع الهندسة المعمارية الكلاسيكية.",
-    description: "Royal and presidential palaces require the pinnacle of engineering discretion and silence. APEC engineered customized low-velocity air supply systems, acoustic baffle attenuation, and premium plumbing fixtures across grand reception halls and living suites.",
+    description: "Royal and presidential palaces require the pinnacle of engineering discretion and silence. Elite engineered customized low-velocity air supply systems, acoustic baffle attenuation, and premium plumbing fixtures across grand reception halls and living suites.",
     descriptionAr: "تطلب المشروع مستويات متقدمة من العزل الصوتي وعدم ظهور فتحات الصيانة، حيث نُفذت مجاري هواء منخفضة السرعة لمنع الضجيج مع بنية سباكة وتغذية مياه بالغة الدقة.",
   },
   {

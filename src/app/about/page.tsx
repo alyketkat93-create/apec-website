@@ -57,8 +57,8 @@ export default function AboutPage() {
               </p>
               <p className="text-sm sm:text-base text-arch-300 leading-relaxed">
                 {lang === "ar"
-                  ? "على الرغم من أن شركة أيبك في مرحلتها المؤسسية المتجددة بالمملكة، إلا أن جذور فريقنا الهندسي والتنفيذي تمتد عميقاً في تراث شركة ASA للمقاولات التي تضم خبراء محترفين يتمتعون بأكثر من 35 عاماً من الخبرة الجماعية في تنفيذ المشاريع الكهروميكانيكية المعقدة عبر السعودية، الكويت، مصر، وإسبانيا."
-                  : "While APEC represents a revitalized corporate entity in the Kingdom of Saudi Arabia, our executive roots extend deep into the heritage of ASA Contracting, bringing forward a seasoned cadre of engineers with over 35 years of collective execution on supertall skyscrapers, healthcare campuses, and industrial networks."}
+                  ? "على الرغم من أن شركة إيليت في مرحلتها المؤسسية المتجددة بالمملكة، إلا أن جذور فريقنا الهندسي والتنفيذي تمتد عميقاً في تراث شركة ASA للمقاولات التي تضم خبراء محترفين يتمتعون بأكثر من 35 عاماً من الخبرة الجماعية في تنفيذ المشاريع الكهروميكانيكية المعقدة عبر السعودية، الكويت، مصر، وإسبانيا."
+                  : "While Elite represents a revitalized corporate entity in the Kingdom of Saudi Arabia, our executive roots extend deep into the heritage of ASA Contracting, bringing forward a seasoned cadre of engineers with over 35 years of collective execution on supertall skyscrapers, healthcare campuses, and industrial networks."}
               </p>
 
               <div className="pt-2 flex flex-wrap gap-4">

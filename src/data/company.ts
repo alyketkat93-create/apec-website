@@ -1,9 +1,9 @@
 import { Certificate } from "@/types";
 
 export const companyProfile = {
-  brandName: "APEC",
-  legalName: "APEC For Contracting",
-  legalNameAr: "شركة أيبك للمقاولات",
+  brandName: "Elite",
+  legalName: "Elite For Contracting",
+  legalNameAr: "شركة إيليت للمقاولات",
   tagline: "Engineering the Future. Building with Confidence.",
   foundingRoots: "Founded upon the 35-year engineering heritage and executive leadership of ASA Contracting, consolidating premier MEP and general contracting excellence across the region.",
   foundingRootsAr: "ترتكز على الخبرة الهندسية والتنفيذية الرائدة لإرث شركة ASA للمقاولات، لتتويج مسيرة كهروميكانيكية ومقاولات عامة تمتد لأكثر من 35 عاماً في المنطقة.",
@@ -20,8 +20,8 @@ export const companyProfile = {
     postalCode: "12381",
     phone: "+966 11 488 6660",
     mobileWhatsApp: "+966 54 813 2029",
-    email: "b.d@apec.com.sa",
-    infoEmail: "info@apec.com.sa",
+    email: "b.d@elite.com.sa",
+    infoEmail: "info@elite.com.sa",
     googleMapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.6334654316265!2d46.657879!3d24.739433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee304d7c07b6f%3A0x6b194fb8eb12e52!2sAl-Nakheel%20Tower%2C%20King%20Fahd%20Rd%2C%20Riyadh!5e0!3m2!1sen!2ssa!4v1715000000000!5m2!1sen!2ssa",
   },
 
@@ -74,8 +74,8 @@ export const companyProfile = {
       certificateNumber: "2025002625",
       validUntil: "17/03/2027",
       image: "/images/certificates/classification-momrah-class1.jpg",
-      description: "Official governmental accreditation qualifying APEC as a First-Class Contractor for major commercial, institutional, and infrastructure electromechanical works across Saudi Arabia.",
-      descriptionAr: "الاعتماد الحكومي الرسمي لتصنيف شركة أيبك ضمن مقاولي الدرجة الأولى للأعمال الإنشائية والكهروميكانيكية والصيانة والتشغيل على مستوى المملكة.",
+      description: "Official governmental accreditation qualifying Elite as a First-Class Contractor for major commercial, institutional, and infrastructure electromechanical works across Saudi Arabia.",
+      descriptionAr: "الاعتماد الحكومي الرسمي لتصنيف شركة إيليت ضمن مقاولي الدرجة الأولى للأعمال الإنشائية والكهروميكانيكية والصيانة والتشغيل على مستوى المملكة.",
     },
     {
       id: "commercial-registration",

@@ -151,7 +151,7 @@ export default function BimTechnologyPage() {
               </div>
             </div>
 
-            {/* APEC BIM Method */}
+            {/* Elite BIM Method */}
             <div className="rounded-3xl bg-arch-900/90 border border-brand-500/50 p-8 sm:p-10 shadow-2xl flex flex-col justify-between relative overflow-hidden backdrop-blur-md">
               <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-brand-500 via-cyan-400 to-brand-500" />
               <div>
@@ -240,7 +240,7 @@ export default function BimTechnologyPage() {
           <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
 
           <h2 className="text-2xl sm:text-4xl font-black text-white relative z-10">
-            {lang === "ar" ? "هل ترغب في تطبيق تقنية الـ BIM في مشروعك القادم؟" : "Elevate Your Next Project with APEC's BIM Technical Office"}
+            {lang === "ar" ? "هل ترغب في تطبيق تقنية الـ BIM في مشروعك القادم؟" : "Elevate Your Next Project with Elite's BIM Technical Office"}
           </h2>
           <p className="text-sm text-arch-300 max-w-2xl mx-auto relative z-10 leading-relaxed font-normal">
             {lang === "ar"

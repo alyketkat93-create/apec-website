@@ -221,8 +221,8 @@ export const ContactForm: React.FC<{ preselectedService?: string }> = ({
             />
             <label htmlFor="consent" className="text-xs text-arch-400 cursor-pointer">
               {t.contact.consentLabel || (lang === "ar"
-                ? "أوافق على قيام الفريق الهندسي بشركة أيبك بالتواصل لمناقشة المتطلبات الفنية والميزانية."
-                : "I authorize APEC engineering team to contact regarding technical scopes and tender docs.")}
+                ? "أوافق على قيام الفريق الهندسي بشركة إيليت بالتواصل لمناقشة المتطلبات الفنية والميزانية."
+                : "I authorize Elite engineering team to contact regarding technical scopes and tender docs.")}
             </label>
           </div>
 

@@ -93,8 +93,8 @@ export default function ContactPage() {
                   <Mail className="w-5 h-5 text-brand-400 shrink-0" />
                   <div>
                     <span className="text-arch-400 block text-[11px] font-mono">{lang === "ar" ? "البريد الإلكتروني التجاري:" : "Business Development Email:"}</span>
-                    <a href="mailto:b.d@apec.com.sa" className="font-bold text-white hover:text-brand-400 transition-colors">
-                      b.d@apec.com.sa
+                    <a href="mailto:b.d@elite.com.sa" className="font-bold text-white hover:text-brand-400 transition-colors">
+                      b.d@elite.com.sa
                     </a>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ export default function ContactPage() {
             {/* Google Maps Interactive Container */}
             <div className="rounded-3xl overflow-hidden bg-arch-900 border border-arch-750/80 shadow-2xl h-64 sm:h-72 relative">
               <iframe
-                title="APEC Riyadh Headquarters"
+                title="Elite Riyadh Headquarters"
                 src={companyProfile.headquarters.googleMapsEmbedUrl}
                 width="100%"
                 height="100%"

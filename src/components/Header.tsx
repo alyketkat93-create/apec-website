@@ -15,6 +15,7 @@ import {
   Building,
   ArrowRight,
   ArrowLeft,
+  Film,
 } from "lucide-react";
 
 export const Header: React.FC = () => {
@@ -42,6 +43,7 @@ export const Header: React.FC = () => {
     { href: "/projects", label: t.nav.projects },
     { href: "/sectors", label: t.nav.sectors },
     { href: "/bim", label: t.nav.bim },
+    { href: "/video", label: lang === "ar" ? "الفيلم الدعائي (2:00)" : "Film (2:00)" },
     { href: "/qhset", label: t.nav.qhse },
     { href: "/careers", label: t.nav.careers },
     { href: "/contact", label: t.nav.contact },
@@ -76,11 +78,11 @@ export const Header: React.FC = () => {
               <span dir="ltr">+966 11 488 6660</span>
             </a>
             <a
-              href="mailto:b.d@apec.com.sa"
+              href="mailto:b.d@elite.com.sa"
               className="flex items-center gap-1.5 text-arch-300 hover:text-white font-medium transition-colors"
             >
               <Mail className="w-3.5 h-3.5 text-brand-400" />
-              <span>b.d@apec.com.sa</span>
+              <span>b.d@elite.com.sa</span>
             </a>
           </div>
         </div>
@@ -100,7 +102,7 @@ export const Header: React.FC = () => {
             <div className="relative w-12 h-12 sm:w-14 sm:h-14 bg-arch-850 rounded-xl p-1 shadow-md border border-arch-700/80 flex items-center justify-center overflow-hidden transition-transform group-hover:scale-105 group-hover:border-brand-500/50">
               <Image
                 src="/images/logo.png"
-                alt="APEC Logo"
+                alt="Elite Logo"
                 fill
                 sizes="(max-width: 640px) 48px, 56px"
                 className="object-contain p-0.5"
@@ -110,7 +112,7 @@ export const Header: React.FC = () => {
             <div className="flex flex-col">
               <div className="flex items-center gap-1.5">
                 <span className="text-xl sm:text-2xl font-black tracking-tight text-white font-sans">
-                  APEC
+                  Elite
                 </span>
                 <span className="inline-block w-2.5 h-2.5 rounded-full bg-brand-400 animate-pulse" />
               </div>

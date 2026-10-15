@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
               <div className="relative w-12 h-12 bg-arch-900 rounded-xl p-1 shadow-md border border-arch-750 flex items-center justify-center overflow-hidden">
                 <Image
                   src="/images/logo.png"
-                  alt="APEC Logo"
+                  alt="Elite Logo"
                   fill
                   sizes="48px"
                   className="object-contain p-0.5"
@@ -39,10 +39,10 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-2xl font-black tracking-tight text-white font-sans">
-                  APEC
+                  Elite
                 </span>
                 <span className="text-xs font-semibold text-brand-400">
-                  {lang === "ar" ? "شركة أيبك للمقاولات العامة والـ MEP" : "APEC For Contracting"}
+                  {lang === "ar" ? "شركة إيليت للمقاولات العامة والـ MEP" : "Elite For Contracting"}
                 </span>
               </div>
             </Link>
@@ -167,8 +167,8 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-brand-400 shrink-0" />
-                <a href="mailto:b.d@apec.com.sa" className="hover:text-white transition-colors">
-                  b.d@apec.com.sa
+                <a href="mailto:b.d@elite.com.sa" className="hover:text-white transition-colors">
+                  b.d@elite.com.sa
                 </a>
               </div>
             </div>

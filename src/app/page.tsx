@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useLanguage } from "@/lib/language-context";
@@ -10,6 +10,7 @@ import { sectorsData } from "@/data/sectors";
 import { companyProfile } from "@/data/company";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ServiceCard } from "@/components/ServiceCard";
+import { PromoVideoModal } from "@/components/PromoVideoModal";
 import {
   ShieldCheck,
   Award,
@@ -19,11 +20,14 @@ import {
   Building,
   Cpu,
   Sparkles,
+  Play,
+  Film,
 } from "lucide-react";
 
 export default function HomePage() {
   const { t, lang, isRTL } = useLanguage();
   const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
+  const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   const featuredProjects = projectsData.filter((p) => p.featured).slice(0, 6);
 
@@ -37,7 +41,7 @@ export default function HomePage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/projects/the-gate-tower.jpg"
-            alt="APEC Engineering Landmark"
+            alt="Elite Engineering Landmark"
             fill
             priority
             sizes="100vw"
@@ -78,7 +82,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Primary & Secondary CTAs */}
+          {/* Primary, Secondary, & Video CTAs */}
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <Link
               href="/projects"
@@ -88,9 +92,19 @@ export default function HomePage() {
               <ArrowIcon className="w-4 h-4" />
             </Link>
 
+            <button
+              onClick={() => setVideoModalOpen(true)}
+              className="inline-flex items-center gap-3 px-6 sm:px-8 py-4 rounded-xl text-sm sm:text-base font-bold bg-arch-900/90 hover:bg-arch-850 text-brand-300 border border-brand-500/40 shadow-xl backdrop-blur-md transition-all hover:-translate-y-0.5 hover:border-brand-400 hover:shadow-brand-500/20 group cursor-pointer"
+            >
+              <div className="w-7 h-7 rounded-full bg-brand-500 text-arch-950 flex items-center justify-center group-hover:scale-110 transition-transform shadow-md">
+                <Play className="w-3.5 h-3.5 ps-0.5 fill-current" />
+              </div>
+              <span>{lang === "ar" ? "شاهد الفيلم الدعائي (2:00 د)" : "Watch Corporate Film (2:00)"}</span>
+            </button>
+
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-7 sm:px-9 py-4 rounded-xl text-sm sm:text-base font-bold bg-arch-850/80 hover:bg-arch-800 text-white border border-arch-700/80 shadow-lg backdrop-blur-md transition-all hover:-translate-y-0.5 hover:border-brand-500/50"
+              className="inline-flex items-center gap-2 px-6 sm:px-8 py-4 rounded-xl text-sm sm:text-base font-bold bg-arch-850/80 hover:bg-arch-800 text-white border border-arch-700/80 shadow-lg backdrop-blur-md transition-all hover:-translate-y-0.5 hover:border-brand-500/50"
             >
               <span>{t.hero.ctaSecondary}</span>
             </Link>
@@ -374,16 +388,16 @@ export default function HomePage() {
       </section>
 
       {/* =========================================================
-          6. WHY CHOOSE APEC
+          6. WHY CHOOSE Elite
       ========================================================= */}
       <section className="py-20 lg:py-28 bg-arch-900 border-b border-arch-800 relative bg-blueprint">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
             <span className="text-xs font-bold uppercase tracking-widest text-brand-400">
-              {t.home.whyApecSubtitle}
+              {t.home.whyEliteSubtitle}
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-              {t.home.whyApecTitle}
+              {t.home.whyEliteTitle}
             </h2>
           </div>
 
@@ -526,6 +540,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* 2-Minute Corporate Video Showcase Modal */}
+      <PromoVideoModal isOpen={videoModalOpen} onClose={() => setVideoModalOpen(false)} />
     </div>
   );
 }

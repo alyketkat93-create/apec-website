@@ -106,7 +106,7 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* Why Join APEC */}
+      {/* Why Join Elite */}
       <section className="relative z-10 py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full border-b border-arch-750/60">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="p-7 rounded-3xl bg-arch-900/90 border border-arch-750/70 shadow-xl space-y-4 backdrop-blur-md">
