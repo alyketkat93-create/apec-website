@@ -105,42 +105,50 @@ export default function VideoShowcasePage() {
 
       {/* CINEMA PREVIEW HERO CONTAINER */}
       <section className="relative z-10 py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="relative rounded-3xl overflow-hidden bg-arch-900/90 border border-arch-750/80 shadow-2xl backdrop-blur-md p-4 sm:p-8">
-          <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden group cursor-pointer border border-arch-750/60" onClick={() => setVideoModalOpen(true)}>
-            <Image
-              src="/images/hero/gate-tower-hero.jpg"
-              alt="Elite Corporate Film Showcase"
-              fill
-              sizes="100vw"
-              className="object-cover object-center filter contrast-125 brightness-75 group-hover:scale-105 transition-transform duration-1000"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-arch-950 via-arch-950/40 to-transparent" />
-            <div className="absolute inset-0 bg-blueprint opacity-35" />
+        <div className="relative rounded-3xl overflow-hidden bg-arch-900/90 border border-arch-750/80 shadow-2xl backdrop-blur-md p-4 sm:p-8 space-y-6">
+          <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden border border-arch-750/60 bg-black shadow-2xl">
+            <video
+              src="/videos/elite-corporate-showcase-2min.mp4"
+              poster="/images/projects/the-gate-tower.jpg"
+              controls
+              playsInline
+              preload="metadata"
+              className="w-full h-full object-cover"
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
-            {/* Play Button Overlay */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 text-center p-6">
-              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-brand-500/90 hover:bg-brand-400 text-arch-950 flex items-center justify-center shadow-2xl shadow-brand-500/50 group-hover:scale-110 transition-all cursor-pointer">
-                <Play className="w-8 h-8 sm:w-10 sm:h-10 ps-1" />
-              </div>
-              <div className="space-y-1">
-                <span className="text-xs font-mono font-bold tracking-widest text-brand-300 uppercase block">
-                  CLICK TO LAUNCH 2-MINUTE CINEMA EXPERIENCE
+          {/* Action Toolbar */}
+          <div className="flex flex-wrap items-center justify-between gap-4 p-4 rounded-2xl bg-arch-950/80 border border-arch-750/60">
+            <div className="flex items-center gap-3">
+              <span className="w-2.5 h-2.5 rounded-full bg-brand-400 animate-pulse" />
+              <div className="space-y-0.5">
+                <span className="text-xs font-mono font-bold text-white block">
+                  {lang === "ar" ? "فيلم إيليت المؤسسي الرسمي · 120 ثانية" : "Official Elite Corporate Film · 120s"}
                 </span>
-                <h3 className="text-xl sm:text-3xl font-black text-white drop-shadow-lg">
-                  WATCH THE 2-MINUTE FILM (4K MASTER)
-                </h3>
-                <span className="text-xs text-arch-300 font-mono block">
-                  Full English Voiceover · Subtitles · Synthesized Cinematic Soundtrack
+                <span className="text-[11px] font-mono text-arch-400 block">
+                  1080p Full HD · Dual Channel Master Audio · English Voiceover
                 </span>
               </div>
             </div>
 
-            {/* Bottom Floating Telemetry */}
-            <div className="absolute bottom-4 inset-x-4 sm:inset-x-8 flex items-center justify-between text-xs font-mono text-arch-300 bg-arch-950/80 px-4 py-2.5 rounded-xl border border-arch-750/70 backdrop-blur-md">
-              <span className="text-brand-400 font-bold">DURATION: 02:00</span>
-              <span className="hidden sm:inline">RESOLUTION: 3840 x 2160 (4K UHD)</span>
-              <span>AUDIO: DUAL CHANNEL STEREO</span>
+            <div className="flex items-center gap-3">
+              <a
+                href="/videos/elite-corporate-showcase-2min.mp4"
+                download="elite-corporate-showcase-2min.mp4"
+                className="px-4 py-2.5 rounded-xl font-bold text-xs bg-brand-500 hover:bg-brand-400 text-arch-950 shadow-md shadow-brand-500/20 transition-all flex items-center gap-2"
+              >
+                <FileText className="w-4 h-4" />
+                <span>{lang === "ar" ? "تحميل ملف الفيديو (MP4)" : "Download Video (MP4)"}</span>
+              </a>
+              <button
+                onClick={() => setVideoModalOpen(true)}
+                className="px-4 py-2.5 rounded-xl font-bold text-xs bg-arch-900 hover:bg-arch-850 text-white border border-arch-750/80 transition-all flex items-center gap-2"
+              >
+                <Sparkles className="w-4 h-4 text-brand-400" />
+                <span>{lang === "ar" ? "مشاهدة في وضع السينما الفائق" : "Launch Interactive Cinema HUD"}</span>
+              </button>
             </div>
           </div>
         </div>

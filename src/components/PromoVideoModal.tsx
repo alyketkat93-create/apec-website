@@ -46,7 +46,7 @@ const scenes: Scene[] = [
     tagline: "Class 1 Accredited Contractor · 35+ Years Engineering Heritage",
     voiceover:
       "In a world of visionary architecture, ambition demands uncompromising precision. Welcome to Elite. Built upon 35 years of engineering mastery across four continents, Elite stands as an officially certified MOMRAH Class-1 contractor, engineering the defining landmarks of Saudi Arabia.",
-    image: "/images/hero/hero-construction.jpg",
+    image: "/images/projects/the-gate-tower.jpg",
     hudMetrics: [
       { label: "ACCREDITATION", value: "MOMRAH CLASS 1" },
       { label: "HERITAGE", value: "35+ YEARS" },
@@ -84,7 +84,7 @@ const scenes: Scene[] = [
     tagline: "The Gate Tower (170m) · Al-Mounsiya Plaza · Diriyah Cultural Preservation",
     voiceover:
       "Our footprint defines landmark skylines. The Gate Tower—a 44-story coastal skyscraper requiring 170 meters of vertical hydraulic mastery. Al-Mounsiya Commercial Complex spanning 28,000 square meters. And historic cultural monuments at Diriyah Gate, where silent, zero-vibration climate networks safeguard Saudi heritage.",
-    image: "/images/projects/gate-tower.jpg",
+    image: "/images/projects/the-gate-tower.jpg",
     hudMetrics: [
       { label: "THE GATE TOWER", value: "44 FLOORS · 170M" },
       { label: "AL-MOUNSIYA", value: "28,000 SQM RETAIL" },
@@ -122,7 +122,7 @@ const scenes: Scene[] = [
     tagline: "Zero-Harm Culture · ISO 9001:2015 ITP Plans · Decarbonization",
     voiceover:
       "Safety is embedded in our DNA. Governed by a proactive Zero-Harm mandate, certified safety oversight, and third-party hydronic balancing. Proudly aligned with Saudi Vision 2030, empowering national engineering leadership and delivering high-efficiency green facilities.",
-    image: "/assets/certi-BhWlH10b.jpg",
+    image: "/images/projects/raka-compound.jpg",
     hudMetrics: [
       { label: "HSE POLICY", value: "ZERO-HARM MANDATE" },
       { label: "QUALITY SYSTEM", value: "ISO 9001:2015 ITP" },
@@ -141,7 +141,7 @@ const scenes: Scene[] = [
     tagline: "Your Vision. Our Turnkey Engineering Rigor.",
     voiceover:
       "Elite For Contracting. Transforming visionary blueprints into enduring national landmarks. For upcoming institutional tenders and landmark engineering partnerships, connect with our executive technical leadership in Riyadh today.",
-    image: "/images/hero/gate-tower-hero.jpg",
+    image: "/images/projects/andalusia-hospital-jeddah.jpg",
     hudMetrics: [
       { label: "HEADQUARTERS", value: "AL-NAKHEEL TOWER, RIYADH" },
       { label: "TELEPHONE", value: "+966 11 488 6660" },
